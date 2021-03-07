@@ -75,6 +75,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /y  "$(SolutionDir)LICENSE-Blueberries.txt" "$(SolutionDir)BUTTER_Client\$(OutDir)"</PostBuildEvent>
+    <PostBuildEvent>xcopy /y  "$(SolutionDir)LICENSE-Blueberries.txt" "..\$(OutDir)"</PostBuildEvent>
   </PropertyGroup>
 </Project>
